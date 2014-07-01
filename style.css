@@ -448,6 +448,9 @@ p.calendar-no {
 	color: #fff;
 	position: relative;
 }
+#featured-student .bx-wrapper {
+	padding-bottom: 0;
+}
 #featured-student .bx-pager {
 	display: none;
 }
@@ -847,7 +850,22 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 	}
 	#featured-groups .bx-pager {
 		display: block;
-	}	
+	}
+	#featured-student .bx-wrapper {
+		padding-bottom: 25px;
+	}
+	#featured-student .bx-pager {
+		bottom: 100px;
+		display: block;
+		left: 0;
+	}
+	#featured-student .bx-pager.bx-default-pager a {
+		border: 2px solid #fff;
+	}
+	#featured-student .bx-pager.bx-default-pager a:hover,
+	#featured-student .bx-pager.bx-default-pager a.active {
+		background: #fff;
+	}
 	.groups-title { padding: 0 20px 15px; }
 	.groups-desc { padding: 0 20px 50px; }
 	.groups-all { display: none; }
