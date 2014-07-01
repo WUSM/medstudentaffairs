@@ -262,7 +262,7 @@ get_header(); ?>
 		<div class="meet clearfix">
 			<h2>Meet Dean Moscoso</h2>
 			<div class="meet-photo">
-				<img src="http://medstudentaffairs-test.wustl.edu/wp-content/themes/medstudentaffairs/_/img/moscoso.jpg">
+				<img src="wp-content/themes/medstudentaffairs/_/img/moscoso.jpg">
 				<p><strong>Lisa Moscoso, MD, PhD</strong></p>
 				<p>Assistant Dean for Student Affairs</p>
 			</div>
