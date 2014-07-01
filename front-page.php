@@ -29,7 +29,7 @@ get_header(); ?>
 				wp_reset_postdata();
 			?>
 		</ul>
-		<div class="tag"><h1>Supporting medical student<br>well being &amp; development</h1></div>
+		<div class="tag"><h1>Supporting medical student<br>well-being &amp; development</h1></div>
 	</div>
 
 	<div id="home-services" class="clearfix">
