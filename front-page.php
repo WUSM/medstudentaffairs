@@ -36,7 +36,7 @@ get_header(); ?>
 		<div class="service-bg clearfix">
 		<div class="service-areas clearfix">
 		<div class="service-area">
-			<div class="service-img-bg"><a href="/services/academic-support/"><p class="explore"><span class="explore-plus">+</span><br>Explore</p><img src="/wp-content/themes/medstudentaffairs/_/img/academic.jpg"></a></div>
+			<div class="service-img-bg"><a href="/services/academic-support/"><p class="explore"><span class="explore-plus">+</span><br>Explore</p><img src="wp-content/themes/medstudentaffairs/_/img/academic.jpg"></a></div>
 			<h2>Academic Support</h2>
 			<ul>
 				<a href="/services/academic-support/learning-support/#tutoring"><li>Tutoring</li></a>
@@ -48,7 +48,7 @@ get_header(); ?>
 				<a href="/services/academic-support/"><p>See All &raquo;</p></a>
 			</ul>
 		</div><div class="service-area">
-			<div class="service-img-bg"><a href="/services/wellness-support/"><p class="explore"><span class="explore-plus">+</span><br>Explore</p><img src="/wp-content/themes/medstudentaffairs/_/img/wellness.jpg"></a></div>
+			<div class="service-img-bg"><a href="/services/wellness-support/"><p class="explore"><span class="explore-plus">+</span><br>Explore</p><img src="wp-content/themes/medstudentaffairs/_/img/wellness.jpg"></a></div>
 			<h2>Wellness Support</h2>
 			<ul>
 				<a href="/services/wellness-support/#physical-health"><li>Physical Health</li></a>
@@ -58,7 +58,7 @@ get_header(); ?>
 				<a href="/services/wellness-support/"><p>See All &raquo;</p></a>
 			</ul>
 		</div><div class="service-area">
-			<div class="service-img-bg"><a href="/services/student-life/"><p class="explore"><span class="explore-plus">+</span><br>Explore</p><img src="/wp-content/themes/medstudentaffairs/_/img/student.jpg"></a></div>
+			<div class="service-img-bg"><a href="/services/student-life/"><p class="explore"><span class="explore-plus">+</span><br>Explore</p><img src="wp-content/themes/medstudentaffairs/_/img/student.jpg"></a></div>
 			<h2>Student Life</h2>
 			<ul>
 				<a href="/student-groups/"><li>Student Groups</li></a>
@@ -131,7 +131,7 @@ get_header(); ?>
                     };
                     echo '</ul>';
                 } else { ?>
-			<div class="no-calendar-events"><a href="/calendar"><div class="calendar-icon"><img src="/wp-content/themes/medstudentaffairs/_/img/calendar.png"></div></a>
+			<div class="no-calendar-events"><a href="/calendar"><div class="calendar-icon"><img src="wp-content/themes/medstudentaffairs/_/img/calendar.png"></div></a>
 			<p>Check back soon for upcoming events such as student group activities, workout sessions, parties, journal clubs, workshops, meetings, commencement, orientation, lunches and cultural events.</p></div>
 		<?php } ?>
 

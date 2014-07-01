@@ -20,6 +20,18 @@ a:hover { color: #717171; }
 .student-affairs {
 	background: #f4f4f4;
 }
+.wrapper {
+	position: relative;
+}
+#page-background-inner {
+	position: absolute;
+    width: 770px;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+    background-color: #f4f4f4;
+}
 img.group-photo {
 	margin: 25px 0;
 }
@@ -692,6 +704,9 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 /* Media queries
 -------------------------------------------------------------------------------*/
 @media screen and (max-width:960px) {
+    #page-background-inner {
+    	display: none;
+    }
     article {
 		min-height: 1px;
 	}
