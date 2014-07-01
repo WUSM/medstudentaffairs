@@ -720,6 +720,9 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 		margin: 0;
         	padding: 0;
 	}
+	#left-col-student-group {
+		display: none;
+	}
 	#billboard {
 		height: auto;
 	}
