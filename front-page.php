@@ -12,6 +12,7 @@ get_header(); ?>
         </nav>
 
 	<div id="billboard">
+		<div class="bxwrapper">
 		<ul class="bxslider">
 			<?php
 				$args = array( 'post_type' => 'header', 'orderby' => 'rand' );
@@ -29,6 +30,7 @@ get_header(); ?>
 				wp_reset_postdata();
 			?>
 		</ul>
+		</div>
 		<div class="tag"><h1>Supporting medical student<br>well-being &amp; development</h1></div>
 	</div>
 
@@ -195,7 +197,7 @@ get_header(); ?>
         <div id="halves" class="clearfix">
         	<div id="featured-student">
         		<h1>Congratulations to</h1>
-        		<ul class="bxslider students">
+        		<ul class="bxslider-students students">
         		<?php
 				$args = array( 'post_type' => 'featured-student', 'orderby' => 'rand' );
 				$the_query = new WP_Query( $args );
@@ -277,7 +279,12 @@ get_header(); ?>
 
 <script>
 jQuery(document).ready(function(){
+  jQuery(".bxwrapper").show();
   jQuery('.bxslider').bxSlider({
+  	adaptiveHeight: false,
+  	speed: 800
+  });
+  jQuery('.bxslider-students').bxSlider({
   	adaptiveHeight: false,
   	speed: 800,
   	onSlideBefore: function(currentSlideNumber, totalSlideQty, currentSlideHtmlObject) {
@@ -286,7 +293,7 @@ jQuery(document).ready(function(){
 		var name = jQuery('.active-student .student-name').text();
 		var url = jQuery('.active-student .permalink').text();
 		var image = jQuery('.active-student img.student-img').attr("src");
-  		jQuery('.student-share-link').html('<a href=\"#\" onclick=\"window.open(\'https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>&t=Congratulations to ' + name + ', featured by Washington University School of Medicine\',\'facebook\', \'width=626,height=436\'); return false;\"><img src=\"wp-content/themes/medstudentaffairs/_/img/fb.png\"></a><a href=\"#\" onclick=\"window.open(\'https://twitter.com/share?text=' + name + '%20featured%20by%20Washington%20University%20School%20of%20Medicine&url=' + url + '\',\'twitter\', \'width=550,height=450\'); return false;\"><img src=\"wp-content/themes/medstudentaffairs/_/img/tw.png\"></a><a href=\"#\" onclick=\"window.open(\'http://pinterest.com/pin/create/button/?url=' + url + '&media=' + image + '&description=' + name + ' featured by Washington University School of Medicine\',\'pinterest\', \'width=752,height=320\'); return false;\"><img src=\"wp-content/themes/medstudentaffairs/_/img/pn.png\"></a>');
+  		jQuery('.student-share-link').html('<a href=\"#\" onclick=\"window.open(\'https://www.facebook.com/sharer/sharer.php?u=' + url + '&t=Congratulations to ' + name + ', featured by Washington University School of Medicine\',\'facebook\', \'width=626,height=436\'); return false;\"><img src=\"wp-content/themes/medstudentaffairs/_/img/fb.png\"></a><a href=\"#\" onclick=\"window.open(\'https://twitter.com/share?text=' + name + '%20featured%20by%20Washington%20University%20School%20of%20Medicine&url=' + url + '\',\'twitter\', \'width=550,height=450\'); return false;\"><img src=\"wp-content/themes/medstudentaffairs/_/img/tw.png\"></a><a href=\"#\" onclick=\"window.open(\'http://pinterest.com/pin/create/button/?url=' + url + '&media=' + image + '&description=' + name + ' featured by Washington University School of Medicine\',\'pinterest\', \'width=752,height=320\'); return false;\"><img src=\"wp-content/themes/medstudentaffairs/_/img/pn.png\"></a>');
   	},
   	onSliderLoad: function(currentSlideNumber, totalSlideQty, currentSlideHtmlObject) {
   		jQuery('.active-student').removeClass('active-student');
@@ -294,7 +301,7 @@ jQuery(document).ready(function(){
   		var name = jQuery('.active-student .student-name').text();
 		var url = jQuery('.active-student .permalink').text();
 		var image = jQuery('.active-student img.student-img').attr("src");
-  		jQuery('.student-share-link').html('<a href=\"#\" onclick=\"window.open(\'https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>&t=Congratulations to ' + name + ', featured by Washington University School of Medicine\',\'facebook\', \'width=626,height=436\'); return false;\"><img src=\"wp-content/themes/medstudentaffairs/_/img/fb.png\"></a><a href=\"#\" onclick=\"window.open(\'https://twitter.com/share?text=' + name + '%20featured%20by%20Washington%20University%20School%20of%20Medicine&url=' + url + '\',\'twitter\', \'width=550,height=450\'); return false;\"><img src=\"wp-content/themes/medstudentaffairs/_/img/tw.png\"></a><a href=\"#\" onclick=\"window.open(\'http://pinterest.com/pin/create/button/?url=' + url + '&media=' + image + '&description=' + name + ' featured by Washington University School of Medicine\',\'pinterest\', \'width=752,height=320\'); return false;\"><img src=\"wp-content/themes/medstudentaffairs/_/img/pn.png\"></a>');
+  		jQuery('.student-share-link').html('<a href=\"#\" onclick=\"window.open(\'https://www.facebook.com/sharer/sharer.php?u=' + url + '&t=Congratulations to ' + name + ', featured by Washington University School of Medicine\',\'facebook\', \'width=626,height=436\'); return false;\"><img src=\"wp-content/themes/medstudentaffairs/_/img/fb.png\"></a><a href=\"#\" onclick=\"window.open(\'https://twitter.com/share?text=' + name + '%20featured%20by%20Washington%20University%20School%20of%20Medicine&url=' + url + '\',\'twitter\', \'width=550,height=450\'); return false;\"><img src=\"wp-content/themes/medstudentaffairs/_/img/tw.png\"></a><a href=\"#\" onclick=\"window.open(\'http://pinterest.com/pin/create/button/?url=' + url + '&media=' + image + '&description=' + name + ' featured by Washington University School of Medicine\',\'pinterest\', \'width=752,height=320\'); return false;\"><img src=\"wp-content/themes/medstudentaffairs/_/img/pn.png\"></a>');
   	}
   });
 });

@@ -65,6 +65,9 @@ body.single-student-group #left-col {
 	position: relative;
 	height: 399px;
 }
+.bxwrapper {
+	display: none;
+}
 #billboard img {
 	display: block;
 }
