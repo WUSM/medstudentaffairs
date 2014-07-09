@@ -879,7 +879,7 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 	}
 	.tag h1 { font-size: 1.4em; }
 	.service-area {width: 100%;}
-	.calendar-title { width: 250px;}
+	.calendar-title { width: 75%; }
 	a.featured-archive {
 		position: relative;
 		margin: 15px auto 0;
