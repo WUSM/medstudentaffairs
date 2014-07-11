@@ -23,6 +23,13 @@ a:hover { color: #717171; }
 .wrapper {
 	position: relative;
 }
+#header-logo { margin: 12px 10px 8px; }
+#header-logo img {
+	width: 435px;
+}
+#utility-nav {
+	margin-top: 8px;
+}
 #page-background-inner {
 	position: absolute;
     width: 770px;

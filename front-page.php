@@ -5,6 +5,15 @@
 
 get_header(); ?>
 
+<!--[if IE 7]>
+  <style type="text/css">
+  .service-area { padding: 0; *display: inline; zoom: 1; }
+  #featured-student { padding: 20px 0; height: auto; }
+  #disorientation-guide { padding: 10px 0 0; float: right; border: none; }
+  .groups-info { left: 130px; }
+  </style>
+<![endif]-->
+
     <div id="main" class="student-affairs clearfix">
 
         <nav id="left-col">
@@ -252,8 +261,8 @@ get_header(); ?>
         			</ul>
         		</div>
         		<div class="guide-preview">
-        			<a href="/wp-content/uploads/2014/06/DIS-O.pdf"><img src="wp-content/themes/medstudentaffairs/_/img/dis-orientation.jpg"></a>
-        			<a href="/wp-content/uploads/2014/06/DIS-O.pdf">Download PDF &raquo;</a>
+        			<a href="/wp-content/uploads/2014/06/DIS-O.pdf" target="_blank"><img src="wp-content/themes/medstudentaffairs/_/img/dis-orientation.jpg"></a>
+        			<a href="/wp-content/uploads/2014/06/DIS-O.pdf" target="_blank">Download PDF &raquo;</a>
         			<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/OurStudentsGuidetoWUSM.aspx">Read online &raquo;</a>
         		</div>
         		</div>
