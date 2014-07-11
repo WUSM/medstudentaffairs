@@ -240,21 +240,21 @@ get_header(); ?>
         		<div class="guide-sections">
         			<h2>Sections</h2>
         			<ul>
-        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/Perspectives.aspx" target="_blank"><li>Perspectives</li></a>
-        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/MedicalSchoolExperience.aspx" target="_blank"><li>Medical School Experience</li></a>
-        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/Life.aspx" target="_blank"><li>Life</li></a>
-        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/Housing.aspx" target="_blank"><li>Housing</li></a>
-        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/Food.aspx" target="_blank"><li>Food</li></a>
-        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/Entertainment.aspx" target="_blank"><li>Entertainment</li></a>
-        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/TravelandOutdoors.aspx" target="_blank"><li>Travel &amp; Outdoors</li></a>
-        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/Advice.aspx" target="_blank"><li>Advice</li></a>
-        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/HelpfulPhoneNumbers.aspx" target="_blank"><li>Helpful Phone Numbers</li></a>
+        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/Perspectives.aspx"><li>Perspectives</li></a>
+        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/MedicalSchoolExperience.aspx"><li>Medical School Experience</li></a>
+        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/Life.aspx"><li>Life</li></a>
+        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/Housing.aspx"><li>Housing</li></a>
+        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/Food.aspx"><li>Food</li></a>
+        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/Entertainment.aspx"><li>Entertainment</li></a>
+        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/TravelandOutdoors.aspx"><li>Travel &amp; Outdoors</li></a>
+        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/Advice.aspx"><li>Advice</li></a>
+        				<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/HelpfulPhoneNumbers.aspx"><li>Helpful Phone Numbers</li></a>
         			</ul>
         		</div>
         		<div class="guide-preview">
-        			<a href="/wp-content/uploads/2014/06/DIS-O.pdf" target="_blank"><img src="wp-content/themes/medstudentaffairs/_/img/dis-orientation.jpg"></a>
-        			<a href="/wp-content/uploads/2014/06/DIS-O.pdf" target="_blank">Download PDF &raquo;</a>
-        			<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/OurStudentsGuidetoWUSM.aspx" target="_blank">Read online &raquo;</a>
+        			<a href="/wp-content/uploads/2014/06/DIS-O.pdf"><img src="wp-content/themes/medstudentaffairs/_/img/dis-orientation.jpg"></a>
+        			<a href="/wp-content/uploads/2014/06/DIS-O.pdf">Download PDF &raquo;</a>
+        			<a href="http://medadmissions.wustl.edu/StudentLife/ourstudentsguidetowusm/Pages/OurStudentsGuidetoWUSM.aspx">Read online &raquo;</a>
         		</div>
         		</div>
         	</div>

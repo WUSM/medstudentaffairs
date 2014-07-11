@@ -11,3 +11,19 @@ function studentaffairs_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'studentaffairs_scripts' );
+
+function custom_post_order($query){
+    $post_types = get_post_types(array('_builtin' => false), 'names');
+    $post_type = $query->get('post_type');
+    if(in_array($post_type, $post_types) && $post_type == 'student-group'){
+        if($query->get('orderby') == ''){
+            $query->set('orderby', 'title');
+        }
+        if($query->get('order') == ''){
+            $query->set('order', 'ASC');
+        }
+    }
+}
+if(is_admin()){
+    add_action('pre_get_posts', 'custom_post_order');
+}
