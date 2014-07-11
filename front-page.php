@@ -134,9 +134,10 @@ get_header(); ?>
                 if ($events) {
                     echo '<ul>';
                     foreach ($events as $event) {
-                        printf('<li class="calendar clearfix"><div class="calendar-date"><div class="calendar-month">%s</div><div class="calendar-day">%s</div></div><div class="calendar-title">%s</div></li>',
+                        printf('<li class="calendar clearfix"><div class="calendar-date"><div class="calendar-month">%s</div><div class="calendar-day">%s</div></div><a href="%s"><div class="calendar-title">%s</div></a></li>',
                             eo_get_the_start('M', $event->ID, null, $event->occurrence_id),
                             eo_get_the_start('j', $event->ID, null, $event->occurrence_id),
+                            get_permalink($event->ID),
                             get_the_title($event->ID)
                         );
                     };
