@@ -34,6 +34,7 @@ function custom_post_types_init() {
     'has_archive' => true,
     'hierarchical' => false,
     'menu_position' => null,
+    'menu_icon' => 'dashicons-images-alt2',
     'supports' => array( 'title' )
   );
 
@@ -71,6 +72,7 @@ function custom_post_types_init() {
     'has_archive' => true,
     'hierarchical' => false,
     'menu_position' => null,
+    'menu_icon' => 'dashicons-calendar',
     'supports' => array( 'title' )
   );
 
@@ -108,6 +110,7 @@ function custom_post_types_init() {
     'has_archive' => true,
     'hierarchical' => false,
     'menu_position' => null,
+    'menu_icon' => 'dashicons-megaphone',
     'supports' => array( 'title', 'editor', 'author' )
   );
 
@@ -145,6 +148,7 @@ function custom_post_types_init() {
     'has_archive' => true,
     'hierarchical' => false,
     'menu_position' => null,
+    'menu_icon' => 'dashicons-star-filled',
     'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'page-attributes' )
   );
 
@@ -181,6 +185,7 @@ function custom_post_types_init() {
     'has_archive' => true, 
     'hierarchical' => false,
     'menu_position' => null,
+    'menu_icon' => 'dashicons-groups',
     'supports' => array( 'title', 'editor' )
   ); 
 
