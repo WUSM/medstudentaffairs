@@ -117,6 +117,43 @@ function custom_post_types_init() {
   register_post_type( 'announcement', $args );
 
 
+  // Student Groups
+
+  $labels = array(
+    'name' => 'Student Groups',
+    'singular_name' => 'Group',
+    'add_new' => 'Add New',
+    'add_new_item' => 'Add New Group',
+    'edit_item' => 'Edit Group',
+    'new_item' => 'New Group',
+    'all_items' => 'All Groups',
+    'view_item' => 'View Group',
+    'search_items' => 'Search Groups',
+    'not_found' =>  'No groups found',
+    'not_found_in_trash' => 'No groups found in Trash', 
+    'parent_item_colon' => '',
+    'menu_name' => 'Student Groups'
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'student-group' ),
+    'capability_type' => 'post',
+    'has_archive' => true, 
+    'hierarchical' => false,
+    'menu_position' => null,
+    'menu_icon' => 'dashicons-groups',
+    'supports' => array( 'title', 'editor' )
+  ); 
+
+  register_post_type( 'student-group', $args );
+
+
   // Featured Student
 
   $labels = array(
@@ -153,43 +190,6 @@ function custom_post_types_init() {
   );
 
   register_post_type( 'featured-student', $args );
-
-
-  // Student Groups
-
-  $labels = array(
-    'name' => 'Student Groups',
-    'singular_name' => 'Group',
-    'add_new' => 'Add New',
-    'add_new_item' => 'Add New Group',
-    'edit_item' => 'Edit Group',
-    'new_item' => 'New Group',
-    'all_items' => 'All Groups',
-    'view_item' => 'View Group',
-    'search_items' => 'Search Groups',
-    'not_found' =>  'No groups found',
-    'not_found_in_trash' => 'No groups found in Trash', 
-    'parent_item_colon' => '',
-    'menu_name' => 'Student Groups'
-  );
-
-  $args = array(
-    'labels' => $labels,
-    'public' => true,
-    'publicly_queryable' => true,
-    'show_ui' => true, 
-    'show_in_menu' => true, 
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'student-group' ),
-    'capability_type' => 'post',
-    'has_archive' => true, 
-    'hierarchical' => false,
-    'menu_position' => null,
-    'menu_icon' => 'dashicons-groups',
-    'supports' => array( 'title', 'editor' )
-  ); 
-
-  register_post_type( 'student-group', $args );
 
 } 
 add_action( 'init', 'custom_post_types_init' );

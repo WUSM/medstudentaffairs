@@ -27,3 +27,8 @@ function custom_post_order($query){
 if(is_admin()){
     add_action('pre_get_posts', 'custom_post_order');
 }
+function remove_menus(){
+  remove_menu_page( 'edit.php' );
+  remove_menu_page( 'edit-comments.php' );
+}
+add_action( 'admin_menu', 'remove_menus' );

@@ -49,36 +49,36 @@ get_header(); ?>
 		<div class="service-area">
 			<div class="service-img-bg"><a href="/services/academic-support/"><p class="explore"><span class="explore-plus">+</span><br>Explore</p><img src="wp-content/themes/medstudentaffairs/_/img/academic.jpg"></a></div>
 			<h2>Academic Support</h2>
+			<?php if( have_rows('academic_support') ): ?>
 			<ul>
-				<a href="/services/academic-support/learning-support/#tutoring"><li>Tutoring</li></a>
-				<a href="/services/academic-support/usmle-preparation/"><li>USMLE Prep</li></a>
-				<a href="/services/academic-support/advising/"><li>Career Advising</li></a>
-				<a href="/services/academic-support/learning-support/#exam-preparation"><li>Exam Prep</li></a>
-				<a href="/services/academic-support/mentoring/"><li>Mentoring/Shadowing</li></a>
-				<a href="/services/academic-support/summer-research/"><li>Summer Research</li></a>
-				<a href="/services/academic-support/"><p>See All &raquo;</p></a>
-			</ul>
+				<?php while ( have_rows('academic_support') ) : the_row(); ?>
+				<a href="<?php the_sub_field('link'); ?>"><li><?php the_sub_field('text'); ?></li></a>
+				<?php endwhile; ?>
+		    	<a href="/services/academic-support/"><p>See All &raquo;</p></a>
+		    </ul>
+			<?php endif; ?>
 		</div><div class="service-area">
 			<div class="service-img-bg"><a href="/services/wellness-support/"><p class="explore"><span class="explore-plus">+</span><br>Explore</p><img src="wp-content/themes/medstudentaffairs/_/img/wellness.jpg"></a></div>
 			<h2>Wellness Support</h2>
+			<?php if( have_rows('wellness_support') ): ?>
 			<ul>
-				<a href="/services/wellness-support/#physical-health"><li>Physical Health</li></a>
-				<a href="/services/wellness-support/#mental-health"><li>Mental Health</li></a>
-				<a href="/services/wellness-support/#spiritual-support"><li>Spiritual Support</li></a>
-				<a href="/services/wellness-support/#mental-health"><li>Stress Management</li></a>
-				<a href="/services/wellness-support/"><p>See All &raquo;</p></a>
-			</ul>
+				<?php while ( have_rows('wellness_support') ) : the_row(); ?>
+				<a href="<?php the_sub_field('link'); ?>"><li><?php the_sub_field('text'); ?></li></a>
+				<?php endwhile; ?>
+		    	<a href="/services/wellness-support/"><p>See All &raquo;</p></a>
+		    </ul>
+			<?php endif; ?>
 		</div><div class="service-area">
 			<div class="service-img-bg"><a href="/services/student-life/"><p class="explore"><span class="explore-plus">+</span><br>Explore</p><img src="wp-content/themes/medstudentaffairs/_/img/student.jpg"></a></div>
 			<h2>Student Life</h2>
+			<?php if( have_rows('student_life') ): ?>
 			<ul>
-				<a href="/student-groups/"><li>Student Groups</li></a>
-				<a href="/services/student-life/#service-opportunities"><li>Service Opportunities</li></a>
-				<a href="/events"><li>Events</li></a>
-				<a href="/resources/#safety-security"><li>Safety and Security</li></a>
-				<a href="/resources/#transportation"><li>Transportation</li></a>
-				<a href="/services/student-life/"><p>See All &raquo;</p></a>
+				<?php while ( have_rows('student_life') ) : the_row(); ?>
+			    <a href="<?php the_sub_field('link'); ?>"><li><?php the_sub_field('text'); ?></li></a>
+			    <?php endwhile; ?>
+			    <a href="/services/student-life/"><p>See All &raquo;</p></a>
 			</ul>
+			<?php endif; ?>
 		</div>
 		</div>
 		</div>
