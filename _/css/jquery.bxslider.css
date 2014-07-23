@@ -220,14 +220,14 @@
 	}
 	#featured-groups .bx-wrapper .bx-controls-direction a {
 		position: absolute;
-		top: 75%;
+		top: 83%;
 		margin-top: -20px;
 	}
 }
 @media screen and (max-width: 670px) {
 	#featured-groups .bx-wrapper .bx-controls-direction a {
 		position: absolute;
-		top: 65%;
+		top: 79%;
 		margin-top: -20px;
 	}
 }

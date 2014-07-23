@@ -70,10 +70,12 @@ body.single-student-group #left-col {
 	margin: 0 auto;
 	width: 100%;
 	position: relative;
-	height: 399px;
 }
 .bxwrapper {
 	display: none;
+}
+#billboard li {
+	min-height: 399px;
 }
 #billboard img {
 	display: block;
@@ -352,6 +354,9 @@ p.calendar-no {
 }
 #featured-groups img {
 	display: block;
+}
+#featured-groups li {
+	min-height: 418px;
 }
 .groups-bg {
 	height: 300px;
@@ -733,8 +738,8 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 	#left-col-student-group {
 		display: none;
 	}
-	#billboard {
-		height: auto;
+	#billboard li {
+		min-height: 1px;
 	}
 	#billboard p {
 		position: absolute;
@@ -763,6 +768,9 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
     		width: 90%;
     		float: none;
     		margin: 34px auto 36px;
+	}
+	#featured-groups li {
+		min-height: 1px;
 	}
 	.groups-info {
 		position: relative;
