@@ -70,6 +70,7 @@ body.single-student-group #left-col {
 	margin: 0 auto;
 	width: 100%;
 	position: relative;
+	height: 399px;
 }
 .bxwrapper {
 	display: none;
@@ -737,6 +738,9 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 	}
 	#left-col-student-group {
 		display: none;
+	}
+	#billboard {
+		height: auto;
 	}
 	#billboard li {
 		min-height: 1px;
