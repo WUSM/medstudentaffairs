@@ -205,7 +205,6 @@ p.explore {
 	width: 455px;
 }
 #featured-event {
-
 	border: 1px solid #d7d7d7;
 	background: #fff;
 	margin: 6px 0 6px 70px;
@@ -216,14 +215,14 @@ p.explore {
 	letter-spacing: 2.5px;
 	font-size: 14px;
 	font-weight: bold;
-	padding: 24px 0 14px;
+	padding: 24px 15px 14px;
 }
 #featured-event h1 {
 	font-size: 30px;
 	font-family: Georgia, serif;
 	font-style: italic;
 	font-weight: normal;
-	padding-bottom: 4px;
+	padding: 0 15px 4px;
 }
 #featured-event p {
 	padding: 0 15px 15px;
@@ -530,6 +529,9 @@ a.featured-archive:hover {
 	max-width: 296px;
 	position: relative;
 }
+#featured-student .student-share img {
+	display: block;
+}
 #featured-student .student-share p {
 	color: rgba(233,233,233,0.5);
 	font-weight: bold;
@@ -538,7 +540,7 @@ a.featured-archive:hover {
 	font-size: 12px;
 	font-family: Arial, sans-serif;
 	text-transform: uppercase;
-	padding: 7px 12px 0 0;
+	padding: 8px 12px 0 0;
 	margin: 0;
 	float: left;
 }
@@ -546,6 +548,8 @@ a.featured-archive:hover {
 	float: left;
 	border-right: 1px solid #727272;
 	padding-right: 6px;
+	height: 33px;
+	width: 109px;
 }
 #featured-student .student-share-link a {
 	margin: 3px 6px 3px 3px;
