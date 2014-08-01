@@ -182,9 +182,13 @@ get_header(); ?>
 					{ ?>
 						<li>
 						<?php setup_postdata( $post ); ?>
-						
-						<div class="groups-image"><img src="<?php the_field('image'); ?>"></div>
 
+						<?php $image = get_field('image');
+						if( !empty($image) ):
+							$size = 'sg-homepage';
+							$thumb = $image['sizes'][ $size ]; ?>
+						<div class="groups-image"><img src="<?php echo $thumb; ?>"></div>
+						<?php endif; ?>
 						<div class="groups-info">
 							<p class="groups-featured">Featured Student Groups</p>
 							<p class="groups-tag">Student-conceived, student-run, school supported</p>

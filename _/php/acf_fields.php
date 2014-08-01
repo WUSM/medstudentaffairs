@@ -139,8 +139,8 @@ if(function_exists("register_field_group"))
                     ),
                     'allorany' => 'all',
                 ),
-                'save_format' => 'url',
-                'preview_size' => 'large',
+                'save_format' => 'object',
+                'preview_size' => 'sg-homepage',
                 'library' => 'all',
             ),
             array (
