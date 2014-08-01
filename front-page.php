@@ -98,7 +98,7 @@ get_header(); ?>
 						$the_query->the_post(); ?>
 						<h1><?php the_title(); ?></h1>
 						<p><strong><?php the_field('date'); ?></strong></p>
-						<p><?php the_field('about'); ?> <a href="<?php the_field('link'); ?>">Learn More &raquo;</a></p>
+						<p><?php the_field('about'); ?><?php if(get_field('link')) : ?> <a href="<?php the_field('link'); ?>">Learn More &raquo;</a><?php endif; ?></p>
 					<?php }
 				} else { ?><p>No featured event to display at this time.</p>
 				<?php }
@@ -114,7 +114,7 @@ get_header(); ?>
 					while ( $the_query->have_posts() ) {
 						$the_query->the_post(); ?>
 						<div id="announcement">
-						<?php the_title(); ?> <a href="<?php the_field('link'); ?>">Learn More &raquo;</a>
+						<?php the_title(); ?><?php if(get_field('link')) : ?> <a href="<?php the_field('link'); ?>">Learn More &raquo;</a><?php endif; ?>
 						</div>
 					<?php }
 				} else {
