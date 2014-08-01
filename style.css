@@ -966,6 +966,9 @@ body.single-student-group #main-nav li.menu-item-408 a {
 	}
 }
 @media screen and (max-width: 450px) {
+	table {
+		width: 100%;
+	}
 	.bx-controls-direction {
 		display: none;
 	}
