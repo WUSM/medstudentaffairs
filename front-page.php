@@ -40,7 +40,7 @@ get_header(); ?>
 			?>
 		</ul>
 		</div>
-		<div class="tag"><h1>Supporting medical student<br>well-being &amp; development</h1></div>
+		<div class="tag"><h1>Supporting medical student well-being, professional and personal development</h1></div>
 	</div>
 
 	<div id="home-services" class="clearfix">
@@ -48,7 +48,7 @@ get_header(); ?>
 		<div class="service-areas clearfix">
 		<div class="service-area">
 			<div class="service-img-bg"><a href="/services/academic-support/"><p class="explore"><span class="explore-plus">+</span><br>Explore</p><img src="wp-content/themes/medstudentaffairs/_/img/academic.jpg"></a></div>
-			<h2>Academic Support</h2>
+			<h2>Academics</h2>
 			<?php if( have_rows('academic_support') ): ?>
 			<ul>
 				<?php while ( have_rows('academic_support') ) : the_row(); ?>
@@ -59,7 +59,7 @@ get_header(); ?>
 			<?php endif; ?>
 		</div><div class="service-area">
 			<div class="service-img-bg"><a href="/services/wellness-support/"><p class="explore"><span class="explore-plus">+</span><br>Explore</p><img src="wp-content/themes/medstudentaffairs/_/img/wellness.jpg"></a></div>
-			<h2>Wellness Support</h2>
+			<h2>Wellness</h2>
 			<?php if( have_rows('wellness_support') ): ?>
 			<ul>
 				<?php while ( have_rows('wellness_support') ) : the_row(); ?>

@@ -105,6 +105,7 @@ body.single-student-group #left-col {
 	font-family: Georgia, serif;
 	color: #fff;
 	font-size: 38px;
+	padding: 0 50px;
 	font-style: italic;
 	font-weight: normal;
 	text-shadow: 1px 1px 6px rgba(0,0,0,0.75);
@@ -838,17 +839,23 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 	.service-img-bg { width: 140px; }
 	p.explore { width: 140px; font-size: 25px; margin: 17px auto 0; }
 	.explore-plus {	font-size:50px; }
+	.tag h1 { font-size: 2.3em; }
 }
 @media screen and (max-width: 752px) {
 	.service-area h2 { font-size: 16px; }
-	.tag h1 { font-size: 2.3em; }
+	
 	#home-events { padding: 0; }
 	.groups-title { font-size: 26px; }
+}
+@media screen and (max-width: 700px) {
+	.tag h1 { font-size: 2em; }
 }
 @media screen and (max-width: 600px) {
 	#wpadminbar {
 		position: fixed!important;
 	}
+	.tag { top: 28%;}
+	.tag h1 { font-size: 2em; padding: 0 60px; }
 }
 @media screen and (max-width:590px) {
 	.service-area { width: 70%; display: block; margin: 0 auto; }
@@ -856,21 +863,21 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 }
 @media screen and (max-width:518px) {
 	article {
-        	width: 80%;
-        	padding-left: 10%;
-        	padding-right: 10%;
-    	}
-	.tag h1 { font-size: 1.8em; }
-    	.calendar #content article {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .calendar #content article {
 		width: 80%;
-        	padding-left: 10%;
-        	padding-right: 10%;
-    	}
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 	.contact-info {
 		float: none;
 		width: 85%;
 		margin: 0 auto;
 	}
+	.tag h1 { font-size: 1.8em; padding: 0 50px; }
 }
 @media screen and (max-width: 450px) {
 	.bx-controls-direction {
@@ -905,7 +912,8 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 		right: 0;
 		left: 0;
 	}
-	.tag h1 { font-size: 1.4em; }
+	.tag { top: 29%; }
+	.tag h1 { font-size: 1.8em; padding: 0 20px; }
 	.service-area {width: 100%;}
 	.calendar-title { width: 75%; }
 	a.featured-archive {
@@ -925,4 +933,7 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 		padding-left: 2%;
 	}
 	.guide-preview { width: 45%; }
+}
+@media screen and (max-width: 380px) {
+	.tag h1 { font-size: 1.4em; padding: 0 20px; }
 }
