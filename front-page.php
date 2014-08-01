@@ -193,7 +193,7 @@ get_header(); ?>
 							<p class="groups-featured">Featured Student Groups</p>
 							<p class="groups-tag">Student-conceived, student-run, school supported</p>
 							<h1 class="groups-title"><a href="<?php the_permalink(); ?>"><?php the_field('group_name'); ?></a></h1>
-							<p class="groups-desc"><?php the_field('excerpt'); ?> <a style="text-transform:uppercase;" href="<?php the_permalink(); ?>">Learn More &raquo;</a></p>
+							<p class="groups-desc"><?php the_field('excerpt'); ?> <a class="groups-learn-more" href="<?php the_permalink(); ?>">Learn More &raquo;</a></p>
 							<p class="groups-all"><a href="student-groups">See All Student Groups &raquo;</a></p>
 						</div>
 						</li>

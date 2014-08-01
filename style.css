@@ -5,7 +5,7 @@
  Author:         Medical Public Affairs
  Author URI:     http://medicine.wustl.edu/
  Template:       wusm
- Version:        2013.12.05
+ Version:        2014.8.1
 */
 
 @import url("../wusm/style.css");
@@ -16,14 +16,18 @@
 a {
     color: #930000;
 }
-a:hover { color: #717171; }
+a:hover {
+	color: #717171;
+}
 .student-affairs {
 	background: #f4f4f4;
 }
 .wrapper {
 	position: relative;
 }
-#header-logo { margin: 12px 10px 8px; }
+#header-logo {
+	margin: 12px 10px 8px;
+}
 #header-logo img {
 	width: 435px;
 }
@@ -127,7 +131,10 @@ body.single-student-group #left-col {
 	margin: 0 auto;
 	background: #f4f4f4;
 }
-.service-areas { margin: 0 auto; max-width: 714px; }
+.service-areas {
+	margin: 0 auto;
+	max-width: 714px;
+}
 .service-area {
 	display: inline-block;
 	vertical-align: top;
@@ -235,7 +242,6 @@ p.explore {
 #featured-event p a {
 	text-transform: uppercase;
 }
-
 #announcement {
 	border: 1px solid #d7d7d7;
 	margin: 18px 0 6px 70px;
@@ -247,14 +253,14 @@ p.explore {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-#announcement a { text-transform: uppercase; }
-
+#announcement a {
+	text-transform: uppercase;
+}
 #home-calendar {
 	width: 380px;
 	float: right;
 	margin: 4px 70px 4px 0;
 }
-
 h2.calendar {
 	width: 94px;
 	padding: 0 8px;
@@ -265,17 +271,14 @@ h2.calendar {
 	z-index: 1;
 	background-color: #eaeaea;
 }
-
 li.calendar {
 	border-top: 1px solid #cdcbcb;
 	padding: 20px 0;
 }
-
 .calendar-date {
 	float: left;
 	text-align: center;
 }
-
 .calendar-month {
 	font-family: Georgia, serif;
 	font-style: italic;
@@ -283,7 +286,6 @@ li.calendar {
 	color: #383838;
 	padding-bottom: 2px;
 }
-
 .calendar-day {
 	width: 48px;
 	height: 26px;
@@ -294,7 +296,6 @@ li.calendar {
 	font-size: 26px;
 	padding: 9px 0 13px;
 }
-
 .calendar-title {
 	float: left;
 	width: 318px;
@@ -306,7 +307,6 @@ p.calendar-no {
 	font-style: italic;
 	border-top: 1px solid #cdcbcb;
 }
-
 .no-calendar-events {
 	text-align: center;
 	border-top: 1px solid #cdcbcb;
@@ -329,11 +329,9 @@ p.calendar-no {
 	line-height: 1.5;
 	margin-bottom: 50px;
 }
-
 #full-calendar {
 	text-align: right;
 }
-
 #full-calendar a {
 	font-family: Georgia, serif;
 	font-style: italic;
@@ -419,6 +417,10 @@ p.calendar-no {
 	line-height: 1.5;
 	padding: 0 60px 30px;
 }
+.groups-learn-more {
+	text-transform: uppercase;
+	display: inline-block;
+}
 .groups-all {
 	font-style: italic;
 	font-family: Georgia, serif;
@@ -427,8 +429,6 @@ p.calendar-no {
 .bottom-groups-all {
 	display: none;
 }
-
-
 #halves {
 	max-width: 960px;
 	margin: 0 auto 10px;
@@ -441,7 +441,6 @@ p.calendar-no {
 	text-transform: uppercase;
 	text-align: center;
 }
-
 
 /* Featured Student
 -------------------------------------------------------------------------------*/
@@ -561,7 +560,6 @@ a.featured-archive:hover {
 	float: right;
 	margin: 5px 0 0;
 }
-
 ul.featured-students {
 	list-style: none;
 	margin: 0;
@@ -572,14 +570,21 @@ ul.featured-students .date {
 	text-transform: uppercase;
 	margin: 35px 0 0;
 }
-ul.featured-students h2 { margin-top: 0; }
-ul.featured-students p { margin-bottom: 10px; }
-.featured-student-single img { padding-bottom: 10px; }
-.featured-student-single p { margin-bottom: 10px; }
-
+ul.featured-students h2 {
+	margin-top: 0;
+}
+ul.featured-students p {
+	margin-bottom: 10px;
+}
+.featured-student-single img {
+	padding-bottom: 10px;
+}
+.featured-student-single p {
+	margin-bottom: 10px;
+}
 
 /* Dis-Orientation Guide
-(-------------------------------------------------------------------------------*/
+-------------------------------------------------------------------------------*/
 #disorientation-guide {
 	width: 50%;
 	float: left;
@@ -639,10 +644,8 @@ ul.featured-students p { margin-bottom: 10px; }
 	font-style: italic;
 }
 
-
 /* Meet the Dean
-(-------------------------------------------------------------------------------*/
-
+-------------------------------------------------------------------------------*/
 #meet-dean {
 	max-width: 960px;
 	width: 100%;
@@ -684,46 +687,48 @@ ul.featured-students p { margin-bottom: 10px; }
 	font-style: italic;
 	font-family: Georgia, serif;
 }
-@media screen and (max-width: 670px) {
-	.meet { width: 90%; margin: 20px auto 40px; }
-	#meet-dean h2 { float: none; width: 100%; text-align: center; margin-top: 25px; }
-	.meet-photo { float: none; width: 100%; margin-bottom: 20px; }
-	.meet-text { float: none; width: 100%; max-width: 400px; margin: 0 auto; }
-}
-
-
-
 
 /* Calendar page
 -------------------------------------------------------------------------------*/
-#main.calendar { background-color: #f4f4f4; }
-.calendar #left-col { display: none; }
-.calendar #content { width: 100%; }
+#main.calendar {
+	background-color: #f4f4f4;
+}
+.calendar #left-col {
+	display: none;
+}
+.calendar #content {
+	width: 100%;
+}
 .calendar #content article {
 	padding: 50px 0 70px 0;
 	max-width: 100%;
 	width: 100%;
 }
-#main.calendar.notch { margin-top: -3px; }
-.calendar.notch #content article h1 { margin-left: 190px; }
-
+#main.calendar.notch {
+	margin-top: -3px;
+}
+.calendar.notch #content article h1 {
+	margin-left: 190px;
+}
 
 /* Student groups
 -------------------------------------------------------------------------------*/
-ul.student-groups { list-style: none; margin-left: 0; }
-.group-contact p { margin-bottom: 5px; }
-body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
-
-
+ul.student-groups { 
+	list-style: none;
+	margin-left: 0;
+}
+.group-contact p {
+	margin-bottom: 5px;
+}
+body.single-student-group #main-nav li.menu-item-408 a {
+	color: #717171;
+}
 #site-footer-bottom #col1 {
 	width: 100%;
 }
-
-
 .accordion-body-text h4 {
 	margin-top: 7px;
 }
-
 
 /* Media queries
 -------------------------------------------------------------------------------*/
@@ -735,11 +740,11 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 		min-height: 1px;
 	}
     #featured-image {
-        	margin-bottom: -2px;
+        margin-bottom: -2px;
 	}
 	.calendar.notch #content article h1 {
 		margin: 0;
-        	padding: 0;
+        padding: 0;
 	}
 	#left-col-student-group {
 		display: none;
@@ -755,28 +760,41 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 		top: 10px;
 		right: 10px;
 	}
-	.tag { top: 34%; }
+	.tag {
+		top: 34%;
+	}
 	#home-services {
 		margin-top: 0;
 		padding-top: 0;
 		background: none;
 		border-top: 4px solid #006b7b;
 	}
-	.service-bg { border-top: none; max-width: 100%; }
-	.service-areas { max-width: 100%; }
-    	.events-left {float: none; width: 100%;}
-    	#featured-event {
+	.service-bg { 
+		border-top: none;
+		max-width: 100%;
+	}
+	.service-areas {
+		max-width: 100%;
+	}
+    .events-left {
+    	float: none;
+    	width: 100%;
+    }
+    #featured-event {
 		width: 90%;
 		float: none;
 		border: 1px solid #d7d7d7;
 		background: #fff;
 		margin: 36px auto 18px;
 	}
-	#announcement { margin: 18px auto 36px; width: 90%;}
+	#announcement {
+		margin: 18px auto 36px;
+		width: 90%;
+	}
 	#home-calendar {
-    		width: 90%;
-    		float: none;
-    		margin: 34px auto 36px;
+    	width: 90%;
+    	float: none;
+    	margin: 34px auto 36px;
 	}
 	#featured-groups li {
 		min-height: 1px;
@@ -809,12 +827,24 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 		color: rgba(51,51,51,0.7);
 		padding: 0 50px 15px;
 	}
-	.groups-featured { padding: 0 50px 3px; font-size: 16px; display: none; }
-	.groups-tag { padding: 0 50px 15px; display: none; }
-	.groups-title { padding: 0 50px 15px; }
-	.groups-desc { padding: 0 50px 30px; }
-	.groups-all { padding: 0 50px; }
-
+	.groups-featured {
+		padding: 0 50px 3px;
+		font-size: 16px;
+		display: none;
+	}
+	.groups-tag {
+		padding: 0 50px 15px;
+		display: none;
+	}
+	.groups-title {
+		padding: 0 50px 15px;
+	}
+	.groups-desc {
+		padding: 0 50px 30px;
+	}
+	.groups-all {
+		padding: 0 50px;
+	}
 	#featured-student {
 		width: 100%;
 		height: auto;
@@ -835,31 +865,84 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 	}
 }
 @media screen and (max-width: 850px) {
-	.service-area img { width: 140px; }
-	.service-img-bg { width: 140px; }
-	p.explore { width: 140px; font-size: 25px; margin: 17px auto 0; }
-	.explore-plus {	font-size:50px; }
-	.tag h1 { font-size: 2.3em; }
+	.service-area img {
+		width: 140px;
+	}
+	.service-img-bg {
+		width: 140px;
+	}
+	p.explore {
+		width: 140px;
+		font-size: 25px;
+		margin: 17px auto 0;
+	}
+	.explore-plus {
+		font-size:50px;
+	}
+	.tag h1 {
+		font-size: 2.3em;
+	}
 }
 @media screen and (max-width: 752px) {
-	.service-area h2 { font-size: 16px; }
-	
-	#home-events { padding: 0; }
-	.groups-title { font-size: 26px; }
+	.service-area h2 {
+		font-size: 16px;
+	}
+	#home-events {
+		padding: 0;
+	}
+	.groups-title {
+		font-size: 26px;
+	}
 }
 @media screen and (max-width: 700px) {
-	.tag h1 { font-size: 2em; }
+	.tag h1 {
+		font-size: 2em;
+	}
+}
+@media screen and (max-width: 670px) {
+	.meet {
+		width: 90%;
+		margin: 20px auto 40px;
+	}
+	#meet-dean h2 {
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin-top: 25px;
+	}
+	.meet-photo {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.meet-text {
+		float: none;
+		width: 100%;
+		max-width: 400px;
+		margin: 0 auto;
+	}
 }
 @media screen and (max-width: 600px) {
 	#wpadminbar {
 		position: fixed!important;
 	}
-	.tag { top: 28%;}
-	.tag h1 { font-size: 2em; padding: 0 60px; }
+	.tag {
+		top: 28%;
+	}
+	.tag h1 {
+		font-size: 2em;
+		padding: 0 60px;
+	}
 }
 @media screen and (max-width:590px) {
-	.service-area { width: 70%; display: block; margin: 0 auto; }
-	.service-area h2 { font-size: 20px; }
+	.service-area { 
+		width: 70%;
+		display: block;
+		margin: 0 auto;
+	}
+	.service-area h2 {
+		font-size: 20px;
+	}
 }
 @media screen and (max-width:518px) {
 	article {
@@ -877,7 +960,10 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 		width: 85%;
 		margin: 0 auto;
 	}
-	.tag h1 { font-size: 1.8em; padding: 0 50px; }
+	.tag h1 {
+		font-size: 1.8em;
+		padding: 0 50px;
+	}
 }
 @media screen and (max-width: 450px) {
 	.bx-controls-direction {
@@ -901,9 +987,15 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 	#featured-student .bx-pager.bx-default-pager a.active {
 		background: #fff;
 	}
-	.groups-title { padding: 0 20px 15px; }
-	.groups-desc { padding: 0 20px 50px; }
-	.groups-all { display: none; }
+	.groups-title {
+		padding: 0 20px 15px;
+	}
+	.groups-desc {
+		padding: 0 20px 50px;
+	}
+	.groups-all {
+		display: none;
+	}
 	.bottom-groups-all {
 		position: absolute;
 		bottom: 15px;
@@ -912,10 +1004,18 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 		right: 0;
 		left: 0;
 	}
-	.tag { top: 29%; }
-	.tag h1 { font-size: 1.8em; padding: 0 20px; }
-	.service-area {width: 100%;}
-	.calendar-title { width: 75%; }
+	.tag {
+		top: 29%;
+	}
+	.tag h1 {
+		font-size: 1.8em; padding: 0 20px;
+	}
+	.service-area {
+		width: 100%;
+	}
+	.calendar-title {
+		width: 75%;
+	}
 	a.featured-archive {
 		position: relative;
 		margin: 15px auto 0;
@@ -935,5 +1035,8 @@ body.single-student-group #main-nav li.menu-item-408 a { color: #717171; }
 	.guide-preview { width: 45%; }
 }
 @media screen and (max-width: 380px) {
-	.tag h1 { font-size: 1.4em; padding: 0 20px; }
+	.tag h1 {
+		font-size: 1.4em;
+		padding: 0 20px;
+	}
 }
