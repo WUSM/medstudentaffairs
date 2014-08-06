@@ -80,6 +80,23 @@
 		wp_reset_postdata();
 	?>
 	</div>
+	<div class="group-category">
+	<h2>Specialty Interest Groups</h2>
+	<?php
+		$args = array( 'post_type' => 'student-group', 'group_category' => 'specialty-interest-groups', 'posts_per_page' => 500, 'orderby'=> 'title', 'order' => 'ASC' );
+		$the_query = new WP_Query( $args );
+		if ( $the_query->have_posts() ) {
+			echo '<ul class="student-groups">';
+			while ( $the_query->have_posts() ) {
+				$the_query->the_post();
+			echo '<li><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
+			}
+			echo '</ul>';
+		} else {
+		}
+		wp_reset_postdata();
+	?>
+	</div>
 	</article>
 
         <?php get_sidebar( 'right' ); ?>
