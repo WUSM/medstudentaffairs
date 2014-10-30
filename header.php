@@ -7,41 +7,20 @@
 <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <!-- the "no-js" class is for Modernizr. -->
 
-<head id="sitename-wustl-edu" data-template-set="html5-reset">
-
+<head>
     <meta charset="utf-8">
-
-    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php is_front_page() ? bloginfo('name') : wp_title(''); ?> | <?php echo is_front_page() ? 'Washington University School of Medicine in St. Louis' : bloginfo('name'); ?></title>
-
     <meta name="title" content="<?php is_front_page() ? bloginfo('name') : wp_title(''); ?> | <?php is_front_page() ? 'Washington University School of Medicine in St. Louis' : bloginfo('name'); ?>">
     <meta name="author" content="Washington University School of Medicine in St. Louis">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/_/img/favicon.ico">
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/_/img/apple-touch-icon.png">
-
-    <!-- concatenate and minify for production -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/reset.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/style.css">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
-
-    <!--[if gte IE 9]>
-    <style type="text/css">
-        .gradient {
-            filter: none;
-        }
-    </style>
-    <![endif]-->
-
     <meta property="og:title" content="Office of Medical Student Affairs">
     <meta property="og:site_name" content="Washington University School of Medicine">
-    <meta property="og:url" content="http://medstudentaffairs.wustl.edu">
-    <meta property="og:description" content="Supporting medical student well being &amp; development">
-
+    <meta property="og:url" content="http://mdstudentaffairs.wustl.edu">
+    <meta property="og:description" content="Supporting medical student well-being, professional and personal development">
 
     <?php
     /* Always have wp_head() just before the closing </head>
@@ -61,7 +40,7 @@
 
         <div class="wrapper clearfix">
 
-            <div id="header-logo"><a onclick="javascript:_gaq.push(['_trackEvent','header-logo','http://medicine.wustl.edu/']);" href="http://medicine.wustl.edu/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/_/img/wusm-logo@2x.png" alt="Washington University School of Medicine in St. Louis"></a></div>
+            <div id="header-logo"><a onclick="javascript:_gaq.push(['_trackEvent','header-logo','http://medicine.wustl.edu/']);" href="http://medicine.wustl.edu/"><img width="435" height="23" src="<?php echo get_template_directory_uri(); ?>/_/img/wusm-logo.svg" onerror="this.src='<?php echo get_template_directory_uri(); ?>/_/img/wusm-logo.png';this.onerror=null;" alt="Washington University School of Medicine in St. Louis"></a></div>
 
             <nav id="utility-bar">
                 <ul id="utility-nav">

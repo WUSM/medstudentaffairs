@@ -22,11 +22,25 @@
 
         <nav id="left-col-student-group">
             <ul id="left-nav">
-                <li class="top_level_page"><a href="/student-groups">Student Groups</a></li><li class="page_item page-item-569"><a href="../student-groups/for-student-groups/">Start a Group</a></li>
+                <li class="top_level_page"><a href="/student-groups">Student Groups</a></li>
+            
+                <?php
+                    $walker = new Razorback_Walker_Page_Selective_Children();
+
+                    $children = wp_list_pages( array (
+                        'sort_column'  => 'menu_order',
+                        'title_li'     => '',
+                        'child_of'     => 397,
+                        'walker'       => $walker,
+                        'echo'         => 0
+                    ));
+                    echo $children;
+                ?>
+
             </ul>
         </nav>
 
-        <?php get_sidebar( 'left' ); ?>
+        
 
         <article<?php echo $class; ?>>
             <?php

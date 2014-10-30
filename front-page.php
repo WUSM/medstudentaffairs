@@ -5,20 +5,9 @@
 
 get_header(); ?>
 
-<!--[if IE 7]>
-  <style type="text/css">
-  .service-area { padding: 0; *display: inline; zoom: 1; }
-  #featured-student { padding: 20px 0; height: auto; }
-  #disorientation-guide { padding: 10px 0 0; float: right; border: none; }
-  .groups-info { left: 130px; }
-  </style>
-<![endif]-->
-
     <div id="main" class="student-affairs clearfix">
 
-        <nav id="left-col">
-            <?php get_sidebar( 'left' ); ?>
-        </nav>
+    <?php get_sidebar( 'left' ); ?>
 
 	<div id="billboard">
 		<div class="bxwrapper">
@@ -84,14 +73,12 @@ get_header(); ?>
 		</div>
 	</div>
 
-        <div id="home-events" class="clearfix">
-
-            <div class="wrapper">
-			<div class="events-left">
+    <div id="home-events" class="clearfix">
+        <div class="wrapper">
+		<div class="events-left">
 			<div id="featured-event">
 				<div class="featured">Featured Event</div>
-			<?php
-				$args = array( 'post_type' => 'featured-event', 'posts_per_page' => 1 );
+				<?php $args = array( 'post_type' => 'featured-event', 'posts_per_page' => 1 );
 				$the_query = new WP_Query( $args );
 				if ( $the_query->have_posts() ) {
 					while ( $the_query->have_posts() ) {
@@ -104,11 +91,10 @@ get_header(); ?>
 				<?php }
 				wp_reset_postdata();
 				?>
-				</div>
+			</div>
 
 			
-				<?php
-				$args = array( 'post_type' => 'announcement', 'posts_per_page' => 1 );
+			<?php $args = array( 'post_type' => 'announcement', 'posts_per_page' => 1 );
 				$the_query = new WP_Query( $args );
 				if ( $the_query->have_posts() ) {
 					while ( $the_query->have_posts() ) {
@@ -117,49 +103,45 @@ get_header(); ?>
 						<?php the_title(); ?><?php if(get_field('link')) : ?> <a href="<?php the_field('link'); ?>">Learn More &raquo;</a><?php endif; ?>
 						</div>
 					<?php }
-				} else {
-				}
-				wp_reset_postdata();
-				?>
-			
-			</div>
-            <div id="home-calendar">
-                <h2 class="calendar">Calendar</h2>
+				} else { } wp_reset_postdata(); ?>
+		</div>
+        <div id="home-calendar">
+            <h2 class="calendar">Calendar</h2>
 
-                <?php
-                $events = eo_get_events(array(
-                    'numberposts'=>3,
-                    'event_end_after'=>'today'
-                ));
-                if ($events) {
-                    echo '<ul>';
-                    foreach ($events as $event) {
-                        printf('<li class="calendar clearfix"><div class="calendar-date"><div class="calendar-month">%s</div><div class="calendar-day">%s</div></div><a href="%s"><div class="calendar-title">%s</div></a></li>',
-                            eo_get_the_start('M', $event->ID, null, $event->occurrence_id),
-                            eo_get_the_start('j', $event->ID, null, $event->occurrence_id),
-                            get_permalink($event->ID),
-                            get_the_title($event->ID)
-                        );
-                    };
-                    echo '</ul>';
-                } else { ?>
-			<div class="no-calendar-events"><a href="/calendar"><div class="calendar-icon"><img src="wp-content/themes/medstudentaffairs/_/img/calendar.png"></div></a>
-			<p>Check back soon for upcoming events such as student group activities, workout sessions, parties, journal clubs, workshops, meetings, commencement, orientation, lunches and cultural events.</p></div>
-		<?php } ?>
+            <?php
+            $events = eo_get_events(array(
+                'numberposts'=>3,
+                'event_end_after'=>'today'
+            ));
+            if ($events) {
+                echo '<ul>';
+                foreach ($events as $event) {
+                    printf('<li class="calendar clearfix"><div class="calendar-date"><div class="calendar-month">%s</div><div class="calendar-day">%s</div></div><a href="%s"><div class="calendar-title">%s</div></a></li>',
+                        eo_get_the_start('M', $event->ID, null, $event->occurrence_id),
+                        eo_get_the_start('j', $event->ID, null, $event->occurrence_id),
+                        get_permalink($event->ID),
+                        get_the_title($event->ID)
+                    );
+                };
+                echo '</ul>';
+            } else { ?>
+		<div class="no-calendar-events"><a href="/calendar"><div class="calendar-icon"><img src="wp-content/themes/medstudentaffairs/_/img/calendar.png"></div></a>
+		<p>Check back soon for upcoming events such as student group activities, workout sessions, parties, journal clubs, workshops, meetings, commencement, orientation, lunches and cultural events.</p></div>
+	<?php } ?>
 
-                <div id="full-calendar"><a href="/calendar/">View Full Calendar &raquo;</a></div>
+            <div id="full-calendar"><a href="/calendar/">View Full Calendar &raquo;</a></div>
 
-            </div>
+        </div>
 
-            </div>
+        </div>
 
         </div>
 
         <div id="featured-groups">
-		<div class="top-featured">
-        		<p class="top-groups-featured">Featured Student Groups</p>
-			<p class="top-groups-tag">Student-conceived, student-run, school supported</p>
-		</div>
+			<div class="top-featured">
+	        	<p class="top-groups-featured">Featured Student Groups</p>
+				<p class="top-groups-tag">Student-conceived, student-run, school supported</p>
+			</div>
         	<ul class="bxslider">
         		<?php
 				$posts = get_posts(array(
@@ -294,6 +276,7 @@ get_header(); ?>
 <script>
 jQuery(document).ready(function(){
   jQuery(".bxwrapper").show();
+  jQuery('.tag').show();
   jQuery('.bxslider').bxSlider({
   	adaptiveHeight: false,
   	speed: 800

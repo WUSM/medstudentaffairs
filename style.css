@@ -1,11 +1,11 @@
 /*
  Theme Name:     Office of Medical Student Affairs
- Theme URI:      http://medstudentaffairs.wustl.edu/
+ Theme URI:      http://mdstudentaffairs.wustl.edu/
  Description:    WUSM Child Theme
  Author:         Medical Public Affairs
  Author URI:     http://medicine.wustl.edu/
  Template:       wusm
- Version:        2014.8.1
+ Version:        2014.10.23.0
 */
 
 @import url("../wusm/style.css");
@@ -24,24 +24,6 @@ a:hover {
 }
 .wrapper {
 	position: relative;
-}
-#header-logo {
-	margin: 12px 10px 8px;
-}
-#header-logo img {
-	width: 435px;
-}
-#utility-nav {
-	margin-top: 8px;
-}
-#page-background-inner {
-	position: absolute;
-    width: 770px;
-    right: 0;
-    top: 0;
-    height: 100%;
-    z-index: -1;
-    background-color: #f4f4f4;
 }
 img.group-photo {
 	margin: 25px 0;
@@ -104,6 +86,7 @@ body.single-student-group #left-col {
 	z-index: 100;
 	text-align: center;
 	width: 100%;
+	display: none;
 }
 .tag h1 {
 	font-family: Georgia, serif;
@@ -146,6 +129,14 @@ body.single-student-group #left-col {
 	box-sizing: border-box;
 	text-align: center;
 }
+.ie7 .service-area {
+	width: 215px;
+	padding: 0;
+	margin: 0 10px;
+	padding: 0;
+	display: inline;
+	zoom: 1;
+}
 .service-area h2 {
 	font-family: Georgia, serif;
 	font-style: italic;
@@ -166,11 +157,21 @@ body.single-student-group #left-col {
 	font-style: italic;
 }
 .service-img-bg {
-	background: #008797;
 	border-radius: 50%;
 	margin: 15px auto;
 	width: 184px;
 	border: 2px solid #fff;
+	background-color: #fff;
+	transition: background-color 0.2s ease;
+}
+.service-img-bg a {
+	display: block;
+}
+.service-img-bg img {
+	border-radius: 50%;
+	opacity: 1;
+	display: block;
+	transition: opacity 0.2s ease;
 }
 p.explore {
 	position: absolute;
@@ -181,26 +182,25 @@ p.explore {
 	width: 184px;
 	padding: 0;
 	margin: 23px auto 0;
-	visibility: hidden;
-	transition: visibility 0.1s ease;
+	opacity: 0;
+	transition: opacity 0.2s ease;
+}
+.ie-lt9 p.explore {
+	display: none;
 }
 .explore-plus {
-	font-size:70px;
-	font-weight:bold;
+	font-size: 70px;
+	font-weight: bold;
 }
-.service-area a:hover p.explore {
-	visibility: visible;
-}
-.service-area img {
-	border-radius: 50%;
-	margin-bottom: -1px;
+.service-img-bg a:hover p.explore {
 	opacity: 1;
-	display: block;
-	transition: opacity 0.1s ease;
 }
-.service-area a:hover > img {
+.service-img-bg:hover {
+	background-color: #008797;
+	transition: background-color 0s ease;
+}
+.service-img-bg a:hover img {
 	opacity: 0.2;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
 }
 #home-events {
 	border-top: 1px solid #cdcbcb;
@@ -241,6 +241,7 @@ p.explore {
 }
 #featured-event p a {
 	text-transform: uppercase;
+	display: inline-block;
 }
 #announcement {
 	border: 1px solid #d7d7d7;
@@ -255,6 +256,7 @@ p.explore {
 }
 #announcement a {
 	text-transform: uppercase;
+	display: inline-block;
 }
 #home-calendar {
 	width: 380px;
@@ -379,14 +381,21 @@ p.calendar-no {
 	right: 0;
 	z-index: 99;
 	margin: 0 auto;
-	background: rgb(255,255,255);
-	background: rgba(255,255,255,0.9);
-	padding: 25px 0;
+	background-color: rgb(255,255,255);
+	background-color: rgba(255,255,255,0.9);
+	background-image: url(_/img/left-red.png), url(_/img/right-red.png);
+	background-repeat: no-repeat, no-repeat;
+	background-position: top 123px left 10px, top 123px right 10px;
+	padding: 25px 10px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	text-align: center;
 	border-top: 4px solid #006b7b;
+}
+.ie-lt8 .groups-info {
+	background: #fff;
+	left: 130px;
 }
 .top-featured {
 	display: none;
@@ -462,6 +471,10 @@ p.calendar-no {
 	overflow: hidden;
 	color: #fff;
 	position: relative;
+}
+.ie7 #featured-student {
+	padding: 20px 0;
+	height: auto;
 }
 #featured-student .bx-wrapper {
 	padding-bottom: 0;
@@ -598,6 +611,11 @@ ul.featured-students p {
 	overflow: hidden;
 	background: #fff;
 }
+.ie7 #disorientation-guide {
+	padding: 10px 0 0;
+	float: right;
+	border: none;
+}
 #disorientation-guide h1 {
 	font-weight: bold;
 }
@@ -653,7 +671,8 @@ ul.featured-students p {
 }
 .meet {
 	max-width: 650px;
-	margin: 50px auto 40px;
+	margin: 0 auto;
+	padding: 50px 0 40px;
 }
 .meet-photo {
 	float: left;
@@ -713,6 +732,9 @@ ul.featured-students p {
 
 /* Student groups
 -------------------------------------------------------------------------------*/
+.groups-a-to-z {
+	margin-top: 50px;
+}
 ul.student-groups { 
 	list-style: none;
 	margin-left: 0;
@@ -806,6 +828,8 @@ body.single-student-group #main-nav li.menu-item-408 a {
 		padding: 15px 0;
 		top: 0;
 		-webkit-text-size-adjust: none;
+		background-color: rgb(255,255,255);
+		background-image: none;
 	}
 	.top-featured {
 		padding: 20px 0 5px;
@@ -902,7 +926,8 @@ body.single-student-group #main-nav li.menu-item-408 a {
 @media screen and (max-width: 670px) {
 	.meet {
 		width: 90%;
-		margin: 20px auto 40px;
+		margin: 0 auto;
+		padding: 20px 0 40px;
 	}
 	#meet-dean h2 {
 		float: none;
@@ -923,9 +948,6 @@ body.single-student-group #main-nav li.menu-item-408 a {
 	}
 }
 @media screen and (max-width: 600px) {
-	#wpadminbar {
-		position: fixed!important;
-	}
 	.tag {
 		top: 28%;
 	}
